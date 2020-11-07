@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Library</title>
+  <meta name="author" content="Bruce Mayenschein">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="style.css" rel="stylesheet">
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+<body>
+
+  <div id="head-container">
+    <h1 id='welcome'>Welcome to the Library</h1>
+  </div>
+  <div class='add-book-btn'>
+    <button id=add-book>Add a Book</button>
+  </div>
+
+  <div class='popUpContainer' id='popUp'>
+    <form>
+        <h1>Book Info</h1>
+        <div class="formcontainer">
+        <hr/>
+        <div class="container">
+            <label for="title"><strong>Title</strong></label>
+            <input id='bookTitle' type="text" placeholder="Enter Title" name="title" required>
+            <label for="author"><strong>Author</strong></label>
+            <input id='bookAuthor' type="text" placeholder="Enter Author" name="author" required>
+            <label for="pages"><strong>Pages</strong></label>
+            <input id='bookLength' type='number' placeholder="Number of Pages" name="pages" requred>
+            <label for='read'><strong>Have you read this book before?</strong></label>
+            <input id='bookReadTrue' type='radio' name='read' value="true" checked="checked">Yes</input>
+            <input id='bookReadFalse' type='radio' name='read' value="false">No</input>
+        </div>
+        <button type="button" id='submitBtn'>Submit</button>
+        <button type="reset" id='cancelBtn'>Cancel</button>
+    </form>
+  </div>
+  </div>
+
+  <div id='bookcase-container'>
+    <div id='bookcase-books'>
+
+    </div>   
+    
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+
+</html>
